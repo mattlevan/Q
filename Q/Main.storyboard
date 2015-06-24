@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Q" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="125" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-tr-dkZ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="center" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="Cell" id="GOd-ws-lgr" customClass="LexiconCell" customModule="Q" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GOd-ws-lgr" id="K0f-bS-Vgd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-Vq-hxP">
+                                                    <rect key="frame" x="175" y="14" width="250" height="97"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="FRO-LD-DU4"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hkx-Vq-hxP" firstAttribute="top" secondItem="K0f-bS-Vgd" secondAttribute="topMargin" constant="6" id="Tzm-SN-aWd"/>
+                                                <constraint firstItem="Hkx-Vq-hxP" firstAttribute="centerX" secondItem="K0f-bS-Vgd" secondAttribute="centerX" id="iR0-Fn-cWo"/>
+                                                <constraint firstItem="Hkx-Vq-hxP" firstAttribute="centerY" secondItem="K0f-bS-Vgd" secondAttribute="centerY" id="mi8-z9-aGz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="LexiconImage" destination="Hkx-Vq-hxP" id="TBD-Vs-Cy9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="W8E-Wr-iPw"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="caE-QK-HeX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hRV-tr-dkZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="BaH-z0-7UK"/>
+                            <constraint firstItem="hRV-tr-dkZ" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Wga-Pn-0Vy"/>
+                            <constraint firstItem="hRV-tr-dkZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="YWI-31-8Cd"/>
+                            <constraint firstAttribute="trailing" secondItem="hRV-tr-dkZ" secondAttribute="trailing" id="ibb-O9-Rpn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="-569"/>
+        </scene>
+    </scenes>
+</document>

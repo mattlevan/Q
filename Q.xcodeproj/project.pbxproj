@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6BF562A61AA3982F003A9B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562A51AA3982F003A9B34 /* AppDelegate.swift */; };
-		6BF562A81AA3982F003A9B34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562A71AA3982F003A9B34 /* ViewController.swift */; };
+		6BF562A81AA3982F003A9B34 /* LexiconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562A71AA3982F003A9B34 /* LexiconView.swift */; };
 		6BF562AB1AA3982F003A9B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562A91AA3982F003A9B34 /* Main.storyboard */; };
 		6BF562AD1AA3982F003A9B34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562AC1AA3982F003A9B34 /* Images.xcassets */; };
 		6BF562B01AA3982F003A9B34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562AE1AA3982F003A9B34 /* LaunchScreen.xib */; };
 		6BF562BC1AA3982F003A9B34 /* QTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562BB1AA3982F003A9B34 /* QTests.swift */; };
+		6BF562C81AA39FCE003A9B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562C71AA39FCE003A9B34 /* Main.storyboard */; };
+		6BF562CB1AA3A013003A9B34 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562C91AA3A013003A9B34 /* Letter.swift */; };
+		6BF562CC1AA3A013003A9B34 /* LexiconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF562CA1AA3A013003A9B34 /* LexiconCell.swift */; };
+		6BF562D11AA3A08D003A9B34 /* dash300.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562CF1AA3A08D003A9B34 /* dash300.wav */; };
+		6BF562D21AA3A08D003A9B34 /* dot100.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BF562D01AA3A08D003A9B34 /* dot100.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		6BF562A01AA3982F003A9B34 /* Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Q.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF562A41AA3982F003A9B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BF562A51AA3982F003A9B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BF562A71AA3982F003A9B34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BF562A71AA3982F003A9B34 /* LexiconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexiconView.swift; sourceTree = "<group>"; };
 		6BF562AA1AA3982F003A9B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BF562AC1AA3982F003A9B34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BF562AF1AA3982F003A9B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6BF562B51AA3982F003A9B34 /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF562BA1AA3982F003A9B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BF562BB1AA3982F003A9B34 /* QTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTests.swift; sourceTree = "<group>"; };
+		6BF562C71AA39FCE003A9B34 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6BF562C91AA3A013003A9B34 /* Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		6BF562CA1AA3A013003A9B34 /* LexiconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexiconCell.swift; sourceTree = "<group>"; };
+		6BF562CF1AA3A08D003A9B34 /* dash300.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dash300.wav; sourceTree = "<group>"; };
+		6BF562D01AA3A08D003A9B34 /* dot100.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dot100.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				6BF562A51AA3982F003A9B34 /* AppDelegate.swift */,
-				6BF562A71AA3982F003A9B34 /* ViewController.swift */,
 				6BF562A91AA3982F003A9B34 /* Main.storyboard */,
 				6BF562AC1AA3982F003A9B34 /* Images.xcassets */,
 				6BF562AE1AA3982F003A9B34 /* LaunchScreen.xib */,
+				6BF562CD1AA3A02A003A9B34 /* Lexicon */,
 				6BF562A31AA3982F003A9B34 /* Supporting Files */,
 			);
 			path = Q;
@@ -90,6 +100,7 @@
 		6BF562A31AA3982F003A9B34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BF562CE1AA3A076003A9B34 /* MorseAudio */,
 				6BF562A41AA3982F003A9B34 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +121,26 @@
 				6BF562BA1AA3982F003A9B34 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BF562CD1AA3A02A003A9B34 /* Lexicon */ = {
+			isa = PBXGroup;
+			children = (
+				6BF562C71AA39FCE003A9B34 /* Main.storyboard */,
+				6BF562A71AA3982F003A9B34 /* LexiconView.swift */,
+				6BF562C91AA3A013003A9B34 /* Letter.swift */,
+				6BF562CA1AA3A013003A9B34 /* LexiconCell.swift */,
+			);
+			name = Lexicon;
+			sourceTree = "<group>";
+		};
+		6BF562CE1AA3A076003A9B34 /* MorseAudio */ = {
+			isa = PBXGroup;
+			children = (
+				6BF562CF1AA3A08D003A9B34 /* dash300.wav */,
+				6BF562D01AA3A08D003A9B34 /* dot100.wav */,
+			);
+			name = MorseAudio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF562D11AA3A08D003A9B34 /* dash300.wav in Resources */,
 				6BF562AB1AA3982F003A9B34 /* Main.storyboard in Resources */,
+				6BF562D21AA3A08D003A9B34 /* dot100.wav in Resources */,
 				6BF562B01AA3982F003A9B34 /* LaunchScreen.xib in Resources */,
+				6BF562C81AA39FCE003A9B34 /* Main.storyboard in Resources */,
 				6BF562AD1AA3982F003A9B34 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF562A81AA3982F003A9B34 /* ViewController.swift in Sources */,
+				6BF562CB1AA3A013003A9B34 /* Letter.swift in Sources */,
+				6BF562A81AA3982F003A9B34 /* LexiconView.swift in Sources */,
+				6BF562CC1AA3A013003A9B34 /* LexiconCell.swift in Sources */,
 				6BF562A61AA3982F003A9B34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -327,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,6 +377,7 @@
 				INFOPLIST_FILE = Q/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +388,7 @@
 				INFOPLIST_FILE = Q/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +445,7 @@
 				6BF562C11AA3982F003A9B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BF562C21AA3982F003A9B34 /* Build configuration list for PBXNativeTarget "QTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +454,7 @@
 				6BF562C41AA3982F003A9B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
